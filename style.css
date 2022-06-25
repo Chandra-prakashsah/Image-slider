@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    padding: 0;
+    background: black;
+}
+.container{
+     position: relative;
+     background:white;
+     left: 10%; 
+     top: 100px; 
+     width: 80vw;
+     height: 80vh;
+     border-radius: 25px;
+     box-sizing: border-box;
+}
+.slide-container{
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+}
+.slide img{
+   position: relative;
+   left: 300px;
+   top: 100px;
+   animation:move 1s ease;
+}
+@keyframes move{
+    0%{transform: scale(2);opacity: 0}
+    100%{transform: scale(1);opacity:1}
+}
+
+.left-arrow{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    color: black;
+    background-color: gainsboro;
+    padding: 8px 19px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.right-arrow{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: black;
+    background-color: gainsboro;
+    padding: 8px 19px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.caption{
+    color: gainsboro;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left:320px;
+    top:100px;
+    text-align: center; 
+}
+.slide{
+    display: none;
+}
+.slide-container .logo{
+     width:100px;
+     height:50px;
+     padding-left: 15px;
+     padding-top: 15px;
+}
+.slide-container .profile{
+        width: 50px;
+        height: 20px;
+        border: 2px solid gainsboro;
+        border-radius: 50%;
+        margin-left: 20px;
+}
+.slide-container .bag{
+        width: 20px;
+        height: 20px;
+        border: 1px solid gainsboro;
+        border-width: 5px 50px;
+        background: gainsboro;
+        border-radius: 20px ;
+}
+.slide-container .location{
+    width: 20px;
+    height: 20px;
+}
+.slide-container span{
+    font-size: 10px;
+}
+.slide-container .cart{
+    width: 20px;
+    height: 20px;
+   float: right;
+   padding-top: 10px;
+   padding-right: 5px;
+}
+.slide-container .add{
+    width: 50px;
+    height: 50px;
+    background: gainsboro;
+    margin-left:100px;  
+}
+.slide-container div .message{
+     width: 20px;
+     height: 20px;
+     margin-top: 20px;
+}
+.slide-container div .total{
+       text-align: end;
+       margin:0;
+       padding-right: 50px;
+
+}
+.slide-container div img{
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width:600px) {
+    .slide img{
+        left: 80px;
+     }
+     .caption{
+        left:100px;
+    }
+}
+@media screen and (max-width:800px) {
+    .slide img{
+        left:100px;
+     }
+     .caption{
+        left:100px;
+    }
+}
+@media screen and (max-width:550px){
+    .slide-container div img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
